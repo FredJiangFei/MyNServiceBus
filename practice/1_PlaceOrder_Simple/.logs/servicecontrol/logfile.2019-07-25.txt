@@ -1,0 +1,209 @@
+2019-07-25 06:00:14.0874|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-07-25 06:00:14.2744|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2019-07-25 06:00:15.0634|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             3.0.0.0
+Audit Retention Period:             10.00:00:00
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Ingest Audit Messages:              True
+Forwarding Error Messages:          False
+Forwarding Audit Messages:          False
+Database Size:                      0 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-07-25 06:00:16.3334|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-07-25 06:00:21.4924|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-07-25 06:00:36.7924|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-07-25 06:00:37.0974|1|Info|NServiceBus.LicenseManager|Selected active license from HKEY_CURRENT_USER\SOFTWARE\ParticularSoftware
+License Expiration: 2019-08-02
+
+2019-07-25 06:00:37.0974|1|Warn|NServiceBus.LicenseManager|Reading license information from the registry has been deprecated and will be removed in version 8.0. See the documentation for more details.
+2019-07-25 06:00:37.7274|11|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-07-25 06:00:37.8464|9|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:00:38.0934|9|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:00:45.4929|10|Info|Particular.ServiceControl.Bootstrapper|Api is now accepting requests on http://localhost:49200/api
+2019-07-25 06:01:08.2529|12|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:01:08.3349|12|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:04:42.2635|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-07-25 06:04:42.5485|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2019-07-25 06:04:43.6145|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             3.0.0.0
+Audit Retention Period:             10.00:00:00
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Ingest Audit Messages:              True
+Forwarding Error Messages:          False
+Forwarding Audit Messages:          False
+Database Size:                      1056768 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-07-25 06:04:45.2825|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-07-25 06:04:50.3405|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-07-25 06:04:52.3115|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-07-25 06:04:52.5765|1|Info|NServiceBus.LicenseManager|Selected active license from HKEY_CURRENT_USER\SOFTWARE\ParticularSoftware
+License Expiration: 2019-08-02
+
+2019-07-25 06:04:52.5765|1|Warn|NServiceBus.LicenseManager|Reading license information from the registry has been deprecated and will be removed in version 8.0. See the documentation for more details.
+2019-07-25 06:04:53.2415|10|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-07-25 06:04:53.2925|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:04:53.4375|9|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:04:59.6181|9|Info|Particular.ServiceControl.Bootstrapper|Api is now accepting requests on http://localhost:49200/api
+2019-07-25 06:05:23.4619|9|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:05:23.4619|25|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:05:53.4767|25|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:05:53.4767|22|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:06:23.4970|34|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:06:23.4970|10|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:06:53.5114|22|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:06:53.5114|26|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:07:23.5303|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:07:23.5393|10|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:07:36.2252|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-07-25 06:07:36.3752|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2019-07-25 06:07:37.1792|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             3.0.0.0
+Audit Retention Period:             10.00:00:00
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Ingest Audit Messages:              True
+Forwarding Error Messages:          False
+Forwarding Audit Messages:          False
+Database Size:                      1056768 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-07-25 06:07:38.7572|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-07-25 06:07:43.9976|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-07-25 06:07:45.8126|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-07-25 06:07:46.0266|1|Info|NServiceBus.LicenseManager|Selected active license from HKEY_CURRENT_USER\SOFTWARE\ParticularSoftware
+License Expiration: 2019-08-02
+
+2019-07-25 06:07:46.0266|1|Warn|NServiceBus.LicenseManager|Reading license information from the registry has been deprecated and will be removed in version 8.0. See the documentation for more details.
+2019-07-25 06:07:46.5106|10|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-07-25 06:07:46.5746|21|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:07:46.7126|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:07:52.2436|21|Info|Particular.ServiceControl.Bootstrapper|Api is now accepting requests on http://localhost:49200/api
+2019-07-25 06:08:16.7331|34|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:08:16.7411|21|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:08:46.7583|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:08:46.7583|38|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:09:16.7739|35|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:09:16.7739|38|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:09:46.7925|38|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:09:46.7925|39|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:10:16.8130|39|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:10:16.8190|35|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:10:46.8377|26|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:10:46.8377|24|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:11:16.8517|36|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:11:16.8517|23|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:11:46.8692|40|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:11:46.8692|23|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:12:16.8835|40|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:12:16.8835|10|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:12:46.9127|39|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:12:46.9127|35|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:13:16.9334|38|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:13:16.9444|10|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:13:46.9530|25|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:13:46.9600|36|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:14:32.9539|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-07-25 06:14:33.1319|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2019-07-25 06:14:33.8209|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             3.0.0.0
+Audit Retention Period:             10.00:00:00
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Ingest Audit Messages:              True
+Forwarding Error Messages:          False
+Forwarding Audit Messages:          False
+Database Size:                      1056768 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-07-25 06:14:34.7359|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-07-25 06:14:39.8226|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-07-25 06:14:41.3356|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-07-25 06:14:41.5236|1|Info|NServiceBus.LicenseManager|Selected active license from HKEY_CURRENT_USER\SOFTWARE\ParticularSoftware
+License Expiration: 2019-08-02
+
+2019-07-25 06:14:41.5236|1|Warn|NServiceBus.LicenseManager|Reading license information from the registry has been deprecated and will be removed in version 8.0. See the documentation for more details.
+2019-07-25 06:14:41.9146|22|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-07-25 06:14:41.9436|10|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:14:42.0496|12|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:14:47.4874|10|Info|Particular.ServiceControl.Bootstrapper|Api is now accepting requests on http://localhost:49200/api
+2019-07-25 06:15:12.0731|22|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:15:12.0731|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:15:42.1026|31|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:15:42.1026|32|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:16:12.1186|12|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:16:12.1186|32|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:16:42.1412|33|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:16:42.1472|33|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:17:06.0114|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-07-25 06:17:06.2344|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2019-07-25 06:17:07.2364|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             3.0.0.0
+Audit Retention Period:             10.00:00:00
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Ingest Audit Messages:              True
+Forwarding Error Messages:          False
+Forwarding Audit Messages:          False
+Database Size:                      1056768 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-07-25 06:17:08.6605|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-07-25 06:17:15.0544|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-07-25 06:17:17.0964|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-07-25 06:17:17.3174|1|Info|NServiceBus.LicenseManager|Selected active license from HKEY_CURRENT_USER\SOFTWARE\ParticularSoftware
+License Expiration: 2019-08-02
+
+2019-07-25 06:17:17.3194|1|Warn|NServiceBus.LicenseManager|Reading license information from the registry has been deprecated and will be removed in version 8.0. See the documentation for more details.
+2019-07-25 06:17:17.8204|22|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-07-25 06:17:17.8684|22|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:17:18.1174|12|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:17:24.6173|10|Info|Particular.ServiceControl.Bootstrapper|Api is now accepting requests on http://localhost:49200/api
+2019-07-25 06:17:48.2409|25|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:17:48.2409|36|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:18:18.2583|22|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:18:18.2763|36|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-07-25 06:28:38.1096|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-07-25 06:28:38.2626|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2019-07-25 06:28:38.9616|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             3.0.0.0
+Audit Retention Period:             10.00:00:00
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Ingest Audit Messages:              True
+Forwarding Error Messages:          False
+Forwarding Audit Messages:          False
+Database Size:                      1056768 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-07-25 06:28:40.3466|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-07-25 06:28:46.3676|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-07-25 06:28:48.5096|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-07-25 06:28:48.7066|1|Info|NServiceBus.LicenseManager|Selected active license from HKEY_CURRENT_USER\SOFTWARE\ParticularSoftware
+License Expiration: 2019-08-02
+
+2019-07-25 06:28:48.7066|1|Warn|NServiceBus.LicenseManager|Reading license information from the registry has been deprecated and will be removed in version 8.0. See the documentation for more details.
+2019-07-25 06:28:49.2096|22|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-07-25 06:28:49.2496|22|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-07-25 06:28:49.3566|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.

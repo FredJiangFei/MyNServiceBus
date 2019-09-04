@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license type="Trial" Applications="All" expiration="2019-08-02" id="dad3aa43-a91a-4ac8-82e5-021a01b16637">
+  <name>jiangf@shinetechchina.com</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>+tswxUAFDuljr37xssDsg/gXltY=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>Wigt5Z9OVBZbnGVDRnOQOLEMo4F1DixXaSg58/GoYcs/WnDtGKmNTWgIM0EzyP6BU56xGyGPuAPFLOA8+0i5kh2NeE+sWP1wBsyiVGDKGxjScHk8sKtcGKYLbha2yPp/Fjv2q1MMqDxHIM6lkpskjhPVHJ6CHJ/4a9UOo2WM+iQ=</SignatureValue>
+  </Signature>
+</license>
