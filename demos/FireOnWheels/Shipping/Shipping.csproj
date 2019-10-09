@@ -53,9 +53,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Saga.cs" />
+    <Compile Include="SagsData.cs" />
     <Compile Include="ShipOrderHandler.cs" />
-    <Compile Include="ShippingPolicy.cs" />
-    <Compile Include="ShippingPolicyData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

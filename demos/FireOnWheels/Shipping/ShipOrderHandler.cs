@@ -5,7 +5,7 @@ using NServiceBus;
 
 namespace Shipping
 {
-    class ShipOrderHandler : IHandleMessages<ShipOrder>
+   public class ShipOrderHandler : IHandleMessages<ShipOrder>
     {
         public Task Handle(ShipOrder message, IMessageHandlerContext context)
         {

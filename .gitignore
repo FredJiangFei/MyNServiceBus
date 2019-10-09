@@ -15,3 +15,5 @@ vs15/
 .vs/
 .db/
 .learningtransport/
+demos/FireOnWheels/.audit-db
+demos/FireOnWheels/.logs
