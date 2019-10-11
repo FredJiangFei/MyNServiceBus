@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Threading;
 using System.Threading.Tasks;
 using Messages;
 using NServiceBus;
 
-namespace Shipping
+namespace Shipping.Saga
 {
     public class Saga : Saga<SagsData>,
         IAmStartedByMessages<OrderPlaced>,
@@ -17,7 +16,9 @@ namespace Shipping
             Console.WriteLine($"OrderBilled {message.OrderId} - Should we ship now?");
             Data.IsOrderBilled = true;
 
-            // Thread.Sleep(5000);
+             //throw new CustomerException();
+             //throw new UnrecoverableException();
+             //Thread.Sleep(5000);
 
             return SendShipOrderCommand(context);
         }

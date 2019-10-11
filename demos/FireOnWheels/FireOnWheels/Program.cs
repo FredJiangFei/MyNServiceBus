@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Messages;
 using NServiceBus;
@@ -10,8 +11,10 @@ namespace FireOnWheels
         static async Task Main(string[] args)
         {
             var config = new EndpointConfiguration("ClientUI");
+
+            // callback 配置
             config.EnableCallbacks();
-            config.MakeInstanceUniquelyAddressable("uniqueId");
+            config.MakeInstanceUniquelyAddressable("uniqueId"); // 确保endpoint有唯一实例Id
 
             var transport = config.UseTransport<LearningTransport>();
             var routing = transport.Routing();
@@ -64,9 +67,18 @@ namespace FireOnWheels
             var options = new SendOptions();
             options.SetDestination("Order");
 
+            // Message Identity
+            options.SetMessageId("Fred test");
+
+            // Cancel request
+            var cancelToken = new CancellationTokenSource();
+            cancelToken.CancelAfter(TimeSpan.FromSeconds(5));
+
             var request = new PriceRequest { Weight = weight };
+
+            // 不要在Handle里调用callback api，会导致死锁
             var priceResponse = await endpoint
-                .Request<PriceResponse>(request, options);
+                .Request<PriceResponse>(request, options, cancelToken.Token);
             var price = priceResponse.Price;
             return price;
         }

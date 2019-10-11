@@ -1,28 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using NServiceBus;
+using Shipping.Helpers;
+using Endpoint = Shipping.Endpoints.Endpoint;
 
 namespace Shipping
 {
     class Program
     {
-        static async Task Main()
+        public static async Task Main(string[] args)
         {
             Console.Title = "Shipping";
-
-            var config= new EndpointConfiguration("Shipping");
-            config.UseTransport<LearningTransport>();
-            config.UsePersistence<LearningPersistence>();
-
-            var endpoint = await Endpoint.Start(config)
-                .ConfigureAwait(false);
-
-            Console.ReadLine();
-
-            await endpoint.Stop().ConfigureAwait(false);
+            var endpoint = new Endpoint();
+            await EndpointHost.RunAsConsoleAsync(endpoint);
         }
     }
 }

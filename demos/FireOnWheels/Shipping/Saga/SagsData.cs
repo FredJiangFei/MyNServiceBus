@@ -1,7 +1,7 @@
 ﻿using System;
 using NServiceBus;
 
-namespace Shipping
+namespace Shipping.Saga
 {
     public class SagsData : ContainSagaData
     {
