@@ -12,7 +12,6 @@ namespace Shipping.Saga
         IHandleTimeouts<CancelOrder>,
         IHandleSagaNotFound
     // IFindSagas<MySagaData>.Using<MyMessage> // 自定义找寻saga逻辑
-
     {
 
         protected override void ConfigureHowToFindSaga(SagaPropertyMapper<SagsData> mapper)

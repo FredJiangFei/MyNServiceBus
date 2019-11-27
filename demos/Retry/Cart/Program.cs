@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Threading.Tasks;
 using Messages;
 using NServiceBus;
@@ -14,7 +13,6 @@ namespace Cart
 
             config.UseSerialization<NewtonsoftSerializer>();
             config.EnableInstallers();
-
 
             var transport = config.UseTransport<RabbitMQTransport>().UseConventionalRoutingTopology();
             transport.ConnectionString("host=127.0.0.1;username=admin;password=1qaz2wsx3edc4rfv;virtualhost=rabbitmq_vhost;");

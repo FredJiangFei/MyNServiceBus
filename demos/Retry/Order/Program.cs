@@ -10,9 +10,9 @@ namespace Order
         static void Main(string[] args)
         {
             var config = new EndpointConfiguration("Order");
+
             config.UseSerialization<NewtonsoftSerializer>();
             config.EnableInstallers();
-
             var transport = config.UseTransport<RabbitMQTransport>().UseConventionalRoutingTopology();
             transport.ConnectionString("host=127.0.0.1;username=admin;password=1qaz2wsx3edc4rfv;virtualhost=rabbitmq_vhost;");
 
@@ -27,7 +27,7 @@ namespace Order
         {
             var recover = config.Recoverability();
 
-            // 对于UnrecoverableException，跳过重试
+            // 对于UnrecoverableException，跳过重试，直接MoveToError
             recover.AddUnrecoverableException<UnrecoverableException>();
 
             // 自定义重试
@@ -62,23 +62,24 @@ namespace Order
             var unrecover = context.Exception is UnrecoverableException;
             var customer = context.Exception is CustomerException;
 
-            if (!unrecover
-                && context.ImmediateProcessingFailures < config.Immediate.MaxNumberOfRetries)
+            var immediateIdx = context.ImmediateProcessingFailures;
+            var immediateMax = config.Immediate.MaxNumberOfRetries;
+            var delayIdx = context.DelayedDeliveriesPerformed;
+            var delayMax = config.Delayed.MaxNumberOfRetries;
+
+            if (!unrecover && immediateIdx < immediateMax)
             {
-                Console.WriteLine($"DelayedRetry {context.DelayedDeliveriesPerformed}, ImmediateRetry {context.ImmediateProcessingFailures}");
+                Console.WriteLine($"DelayedRetry {delayIdx}, ImmediateRetry {immediateIdx}");
                 return RecoverabilityAction.ImmediateRetry();
             }
 
-            if (!unrecover
-                && context.ImmediateProcessingFailures == config.Immediate.MaxNumberOfRetries
-                && context.DelayedDeliveriesPerformed < config.Delayed.MaxNumberOfRetries)
+            if (!unrecover && immediateIdx == immediateMax && delayIdx < delayMax)
             {
-                Console.WriteLine($"DelayedRetry {context.DelayedDeliveriesPerformed}");
+                Console.WriteLine($"DelayedRetry {delayIdx}");
                 return RecoverabilityAction.DelayedRetry(config.Delayed.TimeIncrease);
             }
 
-            if (customer
-                && context.DelayedDeliveriesPerformed == config.Delayed.MaxNumberOfRetries)
+            if (customer && delayIdx == delayMax)
             {
 
                 Console.WriteLine("Alert customer exception");
